@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "wsl gcc -g /mnt/e/blog/learnc/source/${fileBasenameNoExtension}.c -o /mnt/e/blog/learnc/source/${fileBasenameNoExtension}.o",
+            "problemMatcher": []
+        },
+        {
+            "label": "build-run",
+            "type": "shell",
+            "command": "wsl gcc -g /mnt/e/blog/learnc/source/${fileBasenameNoExtension}.c -o /mnt/e/blog/learnc/source/${fileBasenameNoExtension}.o;wsl /mnt/e/blog/learnc/source/${fileBasenameNoExtension}.o",
+            "problemMatcher": []
+        }
+    ]
+}
